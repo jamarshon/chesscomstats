@@ -1,16 +1,17 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "name": "chessstats",
+  "version": "0.0.1",
+  "description": "chessstats",
   "engines": {
     "node": "12.x"
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "test": "node test.js"
   },
   "dependencies": {
+    "cool-ascii-faces": "^1.3.4",
     "ejs": "^2.5.6",
     "express": "^4.15.2"
   },
@@ -20,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/jamarshon/chessstats"
   },
   "keywords": [
     "node",
