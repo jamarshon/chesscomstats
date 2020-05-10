@@ -5,4 +5,5 @@ http://chesscomstats.herokuapp.com/#
 
 ## Development
 heroku local
+
 git push heroku master
