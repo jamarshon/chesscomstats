@@ -173,8 +173,8 @@
                   const mean = sum / total;
                   const std = Math.sqrt(x_2 / total - mean * mean);
                   line1.push(r2(mean));
-                  line2.push(r2(mean + std));
-                  line3.push(r2(mean - std));
+                  line2.push(r2(mean + 1.96*std));
+                  line3.push(r2(mean - 1.96*std));
                   labels.push(moment(first).format(format));
                   NNN.push(total);
 
@@ -195,8 +195,8 @@
             const mean = sum / total;
             const std = Math.sqrt(x_2 / total - mean * mean);
             line1.push(r2(mean));
-            line2.push(r2(mean + std));
-            line3.push(r2(mean - std));
+            line2.push(r2(mean + 1.96*std));
+            line3.push(r2(mean - 1.96*std));
             labels.push(moment(first).format(format));
             NNN.push(total);
 
@@ -219,7 +219,7 @@
                       xAxisID: 'x'
                     },
                     {
-                      label: "STDev Top",
+                      label: "CI Top",
                       type: "line",
                       backgroundColor: "rgb(107, 154, 196, 0.5)",
                       borderColor: "transparent",
@@ -231,7 +231,7 @@
                       xAxisID: 'x'
                     },
                     {
-                      label: "STDev Bottom",
+                      label: "CI Bottom",
                       type: "line",
                       backgroundColor: "rgb(107, 154, 196, 0.5)",
                       borderColor: "transparent",
