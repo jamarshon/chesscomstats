@@ -255,8 +255,8 @@
                           beforeFooter: function(tooltipItems, data) { 
                             const j = tooltipItems[0].index;
                             var e = line1[j];
-                            const std = chart.data.datasets[1].data[j] - chart.data.datasets[0].data[j];
-                            return 'STDev: ' + std.toFixed(2) + ', NumEntries: ' + NNN[j];
+                            const ci_range = chart.data.datasets[1].data[j] - chart.data.datasets[0].data[j];
+                            return '1.96*STDev: ' + (ci_range / 2).toFixed(2) + ', NumEntries: ' + NNN[j];
                           },
                           footer: function(tooltipItems, data) { 
                             const j = tooltipItems[0].index;
